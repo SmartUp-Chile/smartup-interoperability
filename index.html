@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    window.addEventListener('message', function (event) {
+      if (event.data === 'chatStarted') {
+        console.log('Evento cuando el chat se inicia');
+      }
+
+      if (event.data === 'dataSentToStrainerDb') {
+        console.log('Evento cuando se envía la información a la base de datos de The Strainer')
+      }
+    });
+  </script>
+  <style>
+    * {
+      font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Simulación de contenedor The Strainer</h2>
+  <iframe src="https://www.smartup.lat/agente/agente-onboarding-hh---the-strainer?mode=iframe" width="500px"
+    height="500px" frameborder="0"></iframe>
+</body>
+
+</html>
