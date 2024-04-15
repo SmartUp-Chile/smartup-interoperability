@@ -26,6 +26,11 @@ Using the `message` event we can detect the events of chat started and data sent
         // TODO: Fire Pixel event...
       }
 
+      if (event.data === 'querySearch') {
+        console.log('Evento para buscar candidatos');
+        // TODO:
+      }
+
       if (event.data === 'dataSentToStrainerDb') {
         console.log('Evento cuando se envía la información a la base de datos de The Strainer')
         // TODO: Fire Pixel event...
