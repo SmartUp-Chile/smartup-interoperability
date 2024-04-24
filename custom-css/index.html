@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Document</title>
+  <title>SmarUp Custom CSS</title>
+  <meta name="description" content="SmartUp Custom CSS Interoperability">
   <script>
     window.addEventListener('message', function (e) {
       if (e.data === 'chatStarted') {
@@ -38,13 +39,58 @@
   <h2 class="text-center text-3xl my-12 font-bold tracking-tight">SmartUp Custom CSS Interoperability</h2>
   <div class="flex flex-col lg:flex-row items-center w-full justify-center gap-10">
     <form action="" onsubmit="sendCustomCSS(event)" class="flex flex-col items-center">
-      <label for="css-code" class="text-sm font-bold justify-start text-neutral-500">Código CSS</label>
+      <label for="css-code" class="text-sm font-bold justify-start text-neutral-500">CSS Code</label>
       <textarea name="css" id="css-code" cols="30" rows="10"
-        class="font-mono border p-2 rounded-lg">* { background-color: blue }</textarea>
+        class="font-mono border p-2 rounded-lg"
+        >/*
+👋 This is a custom CSS code for SmartUp Agent showing all the available selectors to customize the chat interface.
+*/
+        
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+* {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.send-message {
+  background-color: #007bff !important;
+  color: white !important;
+}
+
+.send-message,
+.restart-chat {
+  border-radius: 5px !important;
+}
+
+.message-input {
+  border: 1px solid black !important;
+  border-radius: 5px !important;
+}
+
+.agent-header {
+  background-color: #007bff !important;
+  color: white !important;
+  border-radius: 5px !important;
+  text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.legend-message {
+  display: none !important;
+}
+
+.agent-profile-picture {
+  display: none !important;
+}
+
+.message {
+  border-radius: 5px !important;
+}</textarea>
       <button type="submit"
-        class="mt-2 bg-neutral-500 hover:bg-neutral-700 text-white font-bold py-2 px-4 rounded-lg w-full">Actualizar</button>
+        class="mt-2 bg-neutral-800 hover:bg-neutral-700 text-white font-bold py-2 px-4 rounded-lg w-full">Update style</button>
     </form>
-    <iframe src="https://www.smartup.lat//agente/asistente-candidatos-strainer?mode=iframe" width="500px" height="500px"
+    <iframe src="https://www.smartup.lat/agente/asistente-candidatos-strainer?mode=iframe" width="500px" height="500px"
       frameborder="0" id="smartup-element"></iframe>
   </div>
 
