@@ -12,6 +12,10 @@ In order to insert special information into the agent, without the need of the u
   https://www.smartup.lat/agente/[AGENT_ID]?[PARAMETER_1]=[VALUE_1]&[PARAMETER_2]=[VALUE_2]
 ```
 
+### Custom Design Mode
+
+**Custom Design Mode** is a feature that allows you to customize the appearance of the SmartUp Agent, light and dark mode, using SmartUp Interoperability features.
+
 ### Custom CSS
 
 **Custom CSS** is a feature that allows you to customize the appearance of the SmartUp Agent component from any website, using SmartUp Interoperability features.
