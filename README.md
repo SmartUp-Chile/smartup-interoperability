@@ -18,7 +18,8 @@ For example:
   https://www.smartup.lat/agente/moishele?name=Daniel
 ```
 
-### Custom Design Mode
+
+### Custom Design Mode
 
 **Custom Design Mode** is a feature that allows you to customize the appearance of the SmartUp Agent, light and dark mode, using SmartUp Interoperability features.
 
