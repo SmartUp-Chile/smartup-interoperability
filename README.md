@@ -18,6 +18,19 @@ For example:
   https://www.smartup.lat/agente/moishele?name=Daniel
 ```
 
+#### How to use Hyperparameters-in-prompt?
+
+Once you added the hyperpameters on the link, you need to edit the system prompt and type it like this:
+
+```
+{{PARAMETER_1}}
+```
+
+For example:
+
+```
+Estás hablando con {{name}}
+```
 
 ### Custom Design Mode
 
