@@ -19,6 +19,16 @@
         console.log('Evento para encontrar candidatos de The Strainer');
         console.log(e.data.query); // SELECT * FROM Candidates WHERE...
       }
+      
+      if (e.data.event === 'createJobPost') {
+        console.log('Evento para crear un nuevo post de trabajo');
+        console.log(e.data);
+      }
+
+      if (e.data.event === 'culturalFit') {
+        console.log('Evento para calcular el fit cultural');
+        console.log(e.data);
+      }
     });
   </script>
   <style>
@@ -30,7 +40,7 @@
 
 <body>
   <h2>Simulación de contenedor The Strainer</h2>
-  <iframe src="https://www.smartup.lat/agente/udity--contact-center-v3?mode=iframe" width="500px"
+  <iframe src="http://localhost:3000/agente/asesor-cultura-organizacional-strainer?mode=iframe" width="500px"
     height="500px" frameborder="0"></iframe>
 </body>
 
