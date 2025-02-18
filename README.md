@@ -1,5 +1,7 @@
 # SmartUp Interoperability Guide
 
+Karpathy was here! 🤖
+
 How to detect special events from the SmartUp Agent portal to the platform window.
 
 ## Global
